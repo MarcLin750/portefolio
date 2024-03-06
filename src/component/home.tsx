@@ -1,12 +1,15 @@
 import React, { FunctionComponent } from "react";
+import '../styles/home.css';
 
 const Home: FunctionComponent = () => {
     return(
-        <div>
-            <h1>
-                Home
-            </h1>
-            <img src="https://chart.googleapis.com/chart?cht=qr&chl=https%3A%2F%2Fmarclin750.github.io%2Fportefolio%2F&chs=180x180&choe=UTF-8&chld=L|2" />
+        <div className="home">
+            <div className="homeItem">
+                <h1>
+                    Marc Lin
+                </h1>   
+                <img src="../images/logo.png" alt="" className="" />
+            </div>
         </div>
     )
 }

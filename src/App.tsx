@@ -10,7 +10,7 @@ const App: FunctionComponent = () => {
             <Router>
                 <NavBar />
                 <Switch>
-                    <Route exact path="/portfolio" Component={Home} />
+                    <Route exact path="/portfolio" component={Home} />
                 </Switch>
                 <Footer />
             </Router>

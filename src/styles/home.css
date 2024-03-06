@@ -1,0 +1,7 @@
+.home{
+    padding-top: 3.5rem;
+    height: 100vh;
+    color: white;
+    background-size: cover;
+    background-image: url('../../public/images/bg.png');
+}
