@@ -3,5 +3,12 @@
     height: 100vh;
     color: white;
     background-size: cover;
-    background-image: url('../../public/images/bg.png');
+    background-image: url('../images/bg.png');
+}
+
+.home_title{
+    background-color: rgba(138, 88, 255, 0.151);
+    padding: 20px;
+    margin-left: 50%;
+    margin-top: 50%;
 }
