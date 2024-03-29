@@ -1,3 +1,12 @@
-.Logo{
-    height: 40px;
+.navbar-img {
+    height: 48px;
+}
+
+.navbar-img-color-mode {
+    height: 28px;
+}
+
+.navbar {
+    margin: 20px;
+    border-radius: 25px;
 }

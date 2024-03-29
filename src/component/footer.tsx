@@ -1,10 +1,16 @@
 import React, { FunctionComponent } from "react";
+import '../styles/footer.css';
 
 const Footer: FunctionComponent = () => {
     return (
-    <div>
-        <h2>Footer</h2>
-    </div>
+    <footer>
+        <h5>
+            &copy;Marc Lin
+        </h5>
+        <h6>
+            PortFolio 2024
+        </h6>
+    </footer>
     )
 }
 
