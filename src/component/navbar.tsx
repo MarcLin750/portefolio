@@ -26,31 +26,33 @@ const NavBar: FunctionComponent = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
               <strong className="me-auto">PortFolio</strong>
-              <ul className="navbar-nav">
-                <li className="nav-item m-1">
+              <ul className="navbar-nav mx-3">
+                <li className="nav-item d-flex align-items-center">
                   <a className="nav-link" href="/portfolio"><strong>Projets</strong></a>
                 </li>
-                <li className="nav-item m-1">
-                  <a className="nav-link" href="/portfolio"><strong>CV</strong></a>
+                <li className="nav-item d-flex align-items-center">
+                  <a className="nav-link" href="/portfolio/cv"><strong>CV</strong></a>
                 </li>
-                <li className="nav-item m-1">
+                <li className="nav-item d-flex align-items-center">
                   <a className="nav-link" href="/portfolio"><strong>Veilles</strong></a>
                 </li>
-                <li className="nav-item m-1">
+                <li className="nav-item d-flex align-items-center">
                   <a className="nav-link" href="/portfolio"><strong>Contact</strong></a>
                 </li>
-                <li className="nav-item input-group align-items-center ">
-                  <img src={sunPath} alt="sun" className="navbar-img-color-mode" />
-                  <div className="form-check form-switch m-2">
-                    <input
-                      className="form-check-input form-control"
-                      type="checkbox"
-                      role="switch"
-                      id="flexSwitchCheckChecked"
-                      onClick={() => myFunction()}
-                    />
+                <li className="nav-item d-flex align-items-center form-control">
+                  <div className="form-color-mode">
+                    <img src={sunPath} alt="sun" className="navbar-img-color-mode" />
+                      <div className="switch-color-mode form-check form-switch">
+                        <input
+                          className="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckChecked"
+                          onClick={() => myFunction()}
+                        />
+                      </div>
+                    <img src={moonPath} alt="sun" className="navbar-img-color-mode"/>
                   </div>
-                  <img src={moonPath} alt="sun" className="navbar-img-color-mode"/>
                 </li>
               </ul>
             </div>

@@ -1,7 +1,8 @@
 import React, { FunctionComponent } from "react";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import NavBar from './component/navbar';
-import Home from './component/home';
+import Home from './pages/home';
+import CV from "./pages/cv";
 import Footer from './component/footer'
 
 const App: FunctionComponent = () => {
@@ -11,6 +12,7 @@ const App: FunctionComponent = () => {
                 <NavBar />
                 <Switch>
                     <Route exact path="/portfolio" component={Home} />
+                    <Route exact path="/portfolio/cv" component={CV} />
                 </Switch>
                 <Footer />
             </Router>

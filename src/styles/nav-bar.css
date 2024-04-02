@@ -1,12 +1,21 @@
 .navbar-img {
-    height: 48px;
+    height: 40px;
 }
 
 .navbar-img-color-mode {
-    height: 28px;
+    height: 20px;
 }
 
 .navbar {
     margin: 20px;
-    border-radius: 25px;
+    border-radius: 20px;
+}
+
+.form-color-mode {
+    display: flex;
+    align-items: center;
+}
+
+.switch-color-mode {
+    margin-left: 10px;
 }
