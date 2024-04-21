@@ -22,18 +22,22 @@
 
 @media screen and (max-width: 600px) {
     .home {
-        padding-top: 20vh;
+        padding-top: 14vh;
     }
 
     .home_title {
-        font-size: 16px; 
+        font-size: 14px; 
         margin-top: 2vh; 
     }
 
+    .home-card-strong {
+        font-size: 20px; 
+    }
+
     .home-card {
-        font-size: 14px;
+        font-size: 12px;
         margin-top: 2vh; 
-        margin-inline: 10vw;
+        margin-inline: 8vw;
         padding: 2vh;
     }
 }

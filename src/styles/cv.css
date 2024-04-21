@@ -1,3 +1,41 @@
 .cv{
-    padding-top: 5rem;
+    margin-block: 8vh;
+}
+
+.buttons-container {
+    text-align: right; /* Align buttons to the right */
+  }
+  
+  .iframe-container {
+    position: 'relative';
+    width: '100%';
+    padding-top: '141.4286%';
+    overflow: 'hidden';
+    border-radius: '8px';
+    will-change: 'transform';
+  }
+  
+  .responsive-iframe {
+    position: 'absolute';
+    width: '100%';
+    height: '100%';
+    top: 0;
+    left: 0;
+    right:0;
+    bottom:0;
+  }
+
+@media screen and (max-width: 600px) {
+    .cv{
+        margin-block: 12vh;
+    }
+    .cv .col-12.text-left {
+        text-align: center; 
+    }
+    .btn-small {
+        padding: .25rem .5rem;
+        font-size: .875rem;
+        line-height: 1.5;
+        border-radius: .2rem;
+      }
 }

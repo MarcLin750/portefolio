@@ -3,3 +3,11 @@
     margin-inline: 20vw;
     padding: 40px;
 }
+
+@media screen and (max-width: 600px) {
+    .profile {
+        margin-block: 5rem;
+        margin-inline: 4vw;
+        padding: 10px;
+    }
+}

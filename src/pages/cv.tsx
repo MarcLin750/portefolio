@@ -2,71 +2,68 @@ import React, { FunctionComponent } from "react";
 import '../styles/cv.css';
 
 const CV: FunctionComponent = () => {
-    // const CvPdf = require('../doc/CV_Marc_Lin.pdf');
-    const Header = () => (
-      <div className="header">
-        <h1>Marc LIN</h1>
-        <p>Développeur | Stagiaire DevOps</p>
-        <p>marclin750@gmail.com | 07 68 17 98 82</p>
-        <p>Paris, France</p>
-      </div>
-    );
-    
-    // Experience Component
-    const Experience = () => (
-      <div className="experience">
-        <h2>Expérience Professionnelle</h2>
-        <p>DIGICAB - Stagiaire DevOps</p>
-        <p>Développement d’application web / Meteor.JS.</p>
-        <p>Gestion d’API Paxe8.</p>
-        <p>Stockage des données dans une base MongoDB.</p>
-        <p>Janvier - Mars 2024</p>
-      </div>
-    );
-    
-    // Education Component
-    const Education = () => (
-      <div className="education">
-        <h2>Éducation</h2>
-        <p>BREVET DE TECHNICIEN SUPERIEUR (BAC + 2)</p>
-        <p>Lycée René des Cartes, 77420 Champs-sur-Marne</p>
-        <p>Service Informatique aux Organisations en Solutions Logicielles et Applications Métiers.</p>
-        <p>2019 - 2022</p>
-      </div>
-    );
-    
-    // Skills Component
-    const Skills = () => (
-      <div className="skills">
-        <h2>Compétences</h2>
-        <p>HTML / CSS / PHP</p>
-        <p>React.JS / Meteor.JS</p>
-        <p>MySQL / MangoDB</p>
-        <p>JS / JAVA / JSON</p>
-        <p>Cloud foundry</p>
-        <p>Python</p>
-      </div>
-    );
-    
-    // Interests Component
-    const Interests = () => (
-      <div className="interests">
-        <h2>Centre d'intérêts</h2>
-        <p>Développement - Création d’application / site web.</p>
-        <p>Projet personnel - Suivi des cours en ligne de création de jeu vidéo.</p>
-        <p>Art - Passionné d’art digital, des animés et des films du studio Ghibli.</p>
-      </div>
-    );
 
-    return(
-      <div className="cv">
-        <Header />
-        <Experience />
-        <Education />
-        <Skills />
-        <Interests />
+  const CvPdf = require('../doc/CV_Marc_Lin.pdf');
+
+  const printDocument = () => {
+    const pdfWindow = window.open(CvPdf);
+    if (pdfWindow) {
+      // Attendre que le PDF soit chargé dans la nouvelle fenêtre avant d'imprimer
+      pdfWindow.onload = function () {
+        // Vérifier si la fenêtre n'est pas bloquée et que le contenu est chargé
+        try {
+          pdfWindow.print();
+        } catch (e) {
+          console.error("La fenêtre d'impression n'a pas pu être ouverte.");
+        }
+      };
+    } else {
+      alert("Impossible d'ouvrir le PDF dans une nouvelle fenêtre. Vérifiez si les pop-ups sont autorisés.");
+    }
+  };
+
+  return (
+    <div className="cv">
+      <div className="container">
+        <div className="buttons-container d-flex justify-content-center">
+          <a className="btn btn-primary btn-small m-2" href={CvPdf} download="MarcLin_CV.pdf">
+            Télécharger mon CV ↓
+          </a>
+          <button onClick={printDocument} className="btn btn-secondary btn-small m-2">
+            Imprimer le CV ↑
+          </button>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-md-6 text-center">
+            <div style={{
+              position: 'relative',
+              width: '100%',
+              paddingTop: '141.4286%',
+              overflow: 'hidden',
+              borderRadius: '8px',
+              willChange: 'transform',
+            }}>
+            <iframe
+              title="Embedded CV"
+              style={{
+                position: 'absolute',
+                width: '100%',
+                height: '100%',
+                top: 0,
+                left: 0,
+                right:0,
+                bottom:0
+              }}
+              src="https://www.canva.com/design/DAF6zpytwG8/hGtHpfkjIED4q7qi_UT9Zw/view?embed"
+              allowFullScreen
+              allow="fullscreen"
+            ></iframe>
+            </div>
+          </div>
+        </div>
       </div>
-    )
+    </div>
+  );
 }
 
 export default CV;
