@@ -20,10 +20,12 @@ const App: FunctionComponent = () => {
   
     return(
         <div>
-            <nav className="navbarPortfolio navbar navbar-expand-xl fixed-top bg-body" >
+            <nav className="navbarPortfolio navbar navbar-expand-xl fixed-top bg-body border border-2 shadow">
               <div className="container-fluid">
-                <img src={logoPath} alt="logo" className="navbar-img" onClick={() => setActivePages('Home')} />
-                <strong className="mx-4" onClick={() => setActivePages('Home')}>Marc Lin</strong>
+                <a href="#top" onClick={() => setActivePages('Home')}>
+                  <img src={logoPath} alt="logo" className="navbar-img" />
+                </a>
+                <a className="mx-4 nav-link" href="#top" onClick={() => setActivePages('Home')}><strong>Marc Lin</strong></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
@@ -31,10 +33,10 @@ const App: FunctionComponent = () => {
                   <strong className="me-auto">PortFolio</strong>
                   <ul className="navbar-nav mx-3">
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" onClick={() => setActivePages('Profile')}><strong>Profil</strong></a>
+                      <a href="#top" className="nav-link" onClick={() => setActivePages('Profile')}><strong>Profil</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" onClick={() => setActivePages('CV')}><strong>CV</strong></a>
+                      <a href="#top" className="nav-link" onClick={() => setActivePages('CV')}><strong>CV</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
                       <a className="nav-link" href="/portfolio"><strong>Projets</strong></a>
@@ -66,7 +68,7 @@ const App: FunctionComponent = () => {
             </nav>
 
             {activePages === 'Home' && (
-                <Home />
+                <Home setActivePage={setActivePages} />
             )}
             {activePages === 'Projet' && (
                 <CV />
