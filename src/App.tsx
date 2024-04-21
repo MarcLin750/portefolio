@@ -1,6 +1,7 @@
 import React, { FunctionComponent, useState } from "react";
 import Home from './pages/home';
 import CV from "./pages/cv";
+import Profile from "./pages/profile"; // Importez le composant du profil
 import Footer from './component/footer'
 
 import './styles/nav-bar.css';
@@ -10,23 +11,19 @@ const App: FunctionComponent = () => {
     const sunPath = require('./images/sun.png');
     const moonPath = require('./images/moon.png');
     
-    const [activeNavItem, setActiveNavItem] = useState<string>('Home');
+    const [activePages, setActivePages] = useState<string>('Home');
     
-    function myFunction() {
+    function colorModFunction() {
       var element = document.body;
       element.dataset.bsTheme = element.dataset.bsTheme === "light" ? "dark" : "light";
     }
   
     return(
         <div>
-            <nav className="navbarPortfolio navbar navbar-expand-sm fixed-top bg-body-tertiary">
+            <nav className="navbarPortfolio navbar navbar-expand-xl fixed-top bg-body" >
               <div className="container-fluid">
-                <a onClick={() => setActiveNavItem('Home')}>
-                  <img src={logoPath} alt="logo" className="navbar-img" />
-                </a>
-                <a className="navbar-brand" onClick={() => setActiveNavItem('Home')}>
-                  Marc Lin
-                </a>
+                <img src={logoPath} alt="logo" className="navbar-img" onClick={() => setActivePages('Home')} />
+                <strong className="mx-4" onClick={() => setActivePages('Home')}>Marc Lin</strong>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
@@ -34,10 +31,13 @@ const App: FunctionComponent = () => {
                   <strong className="me-auto">PortFolio</strong>
                   <ul className="navbar-nav mx-3">
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" href="/portfolio"><strong>Projets</strong></a>
+                      <a className="nav-link" onClick={() => setActivePages('Profile')}><strong>Profil</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" onClick={() => setActiveNavItem('CV')}><strong>CV</strong></a>
+                      <a className="nav-link" onClick={() => setActivePages('CV')}><strong>CV</strong></a>
+                    </li>
+                    <li className="nav-item d-flex align-items-center">
+                      <a className="nav-link" href="/portfolio"><strong>Projets</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
                       <a className="nav-link" href="/portfolio"><strong>Veilles</strong></a>
@@ -54,7 +54,7 @@ const App: FunctionComponent = () => {
                               type="checkbox"
                               role="switch"
                               id="flexSwitchCheckChecked"
-                              onClick={() => myFunction()}
+                              onClick={() => colorModFunction()}
                             />
                           </div>
                         <img src={moonPath} alt="sun" className="navbar-img-color-mode"/>
@@ -65,13 +65,20 @@ const App: FunctionComponent = () => {
               </div>
             </nav>
 
-            {activeNavItem === 'Home' && (
+            {activePages === 'Home' && (
                 <Home />
             )}
-            {activeNavItem === 'CV' && (
+            {activePages === 'Projet' && (
                 <CV />
             )}
-
+            {activePages === 'CV' && (
+                <CV />
+            )}
+            {/* Ajoutez le profil ici */}
+            {activePages === 'Profile' && (
+                <Profile />
+            )}
+            {/* Fin du profil */}
             <Footer />
         </div>
     )
