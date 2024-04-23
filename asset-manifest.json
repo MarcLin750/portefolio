@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.00d572c2.css",
-    "main.js": "/portfolio/static/js/main.f93bceda.js",
+    "main.css": "/portfolio/static/css/main.728dd5d7.css",
+    "main.js": "/portfolio/static/js/main.90b54ab8.js",
     "static/media/bg.png": "/portfolio/static/media/bg.09af36efaf606c25712d.png",
     "static/media/CV_Marc_Lin.pdf": "/portfolio/static/media/CV_Marc_Lin.6ac51ba45ff211fd069e.pdf",
     "static/media/logo.png": "/portfolio/static/media/logo.2d4f22600694f071295c.png",
     "index.html": "/portfolio/index.html",
-    "main.00d572c2.css.map": "/portfolio/static/css/main.00d572c2.css.map",
-    "main.f93bceda.js.map": "/portfolio/static/js/main.f93bceda.js.map"
+    "main.728dd5d7.css.map": "/portfolio/static/css/main.728dd5d7.css.map",
+    "main.90b54ab8.js.map": "/portfolio/static/js/main.90b54ab8.js.map"
   },
   "entrypoints": [
-    "static/css/main.00d572c2.css",
-    "static/js/main.f93bceda.js"
+    "static/css/main.728dd5d7.css",
+    "static/js/main.90b54ab8.js"
   ]
 }
