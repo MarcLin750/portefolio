@@ -1,10 +1,11 @@
 import React, { FunctionComponent, useState } from "react";
 import Home from './pages/home';
 import CV from "./pages/cv";
-import Profile from "./pages/profile"; // Importez le composant du profil
+import Profile from "./pages/profile";
 import Footer from './component/footer'
 
 import './styles/nav-bar.css';
+import Veilles from "./pages/veilles";
 
 const App: FunctionComponent = () => {
     const logoPath = require('./images/logo.png');
@@ -41,16 +42,16 @@ const App: FunctionComponent = () => {
                       <a className="nav-link" href="#top" onClick={() => handleSetActivePage('CV')}><strong>CV</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" href="/portfolio"><strong>Projets</strong></a>
+                      <a className="nav-link" href="#top" onClick={() => handleSetActivePage('Projets')}><strong>Projets</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" href="/portfolio"><strong>Experience</strong></a>
+                      <a className="nav-link" href="#top" onClick={() => handleSetActivePage('Experiences')}><strong>Experiences</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" href="/portfolio"><strong>Veilles</strong></a>
+                      <a className="nav-link" href="#top" onClick={() => handleSetActivePage('Veilles')}><strong>Veilles</strong></a>
                     </li>
                     <li className="nav-item d-flex align-items-center">
-                      <a className="nav-link" href="/portfolio"><strong>Contact</strong></a>
+                      <a className="nav-link" href="#top" onClick={() => handleSetActivePage('Contact')}><strong>Contact</strong></a>
                     </li>
                     <li className="nav-item">
                       <div className="d-flex align-items-center">
@@ -71,21 +72,27 @@ const App: FunctionComponent = () => {
                 </div>
               </div>
             </nav>
-
             {activePage === 'Home' && (
                 <Home setActivePage={handleSetActivePage} />
             )}
-            {activePage === 'Projet' && (
-                <CV />
+            {activePage === 'Profile' && (
+                <Profile />
             )}
             {activePage === 'CV' && (
                 <CV />
             )}
-            {/* Ajoutez le profil ici */}
-            {activePage === 'Profile' && (
-                <Profile />
+            {activePage === 'Projets' && (
+                <CV />
             )}
-            {/* Fin du profil */}
+            {activePage === 'Experiences' && (
+                <CV />
+            )}
+            {activePage === 'Veilles' && (
+                <Veilles />
+            )}
+            {activePage === 'Contact' && (
+                <CV />
+            )}
             <Footer />
         </div>
     )

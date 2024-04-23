@@ -46,18 +46,60 @@ const Profile: FunctionComponent = () => {
         <h2>Expériences professionnelles</h2>
       </div>
 
-      {/* Compétences */}
       <div className="section border-bottom">
         <h2>Compétences</h2>
-        <ul className="list-group">
-          <li className="list-group-item">HTML / CSS / PHP</li>
-          <li className="list-group-item">React.JS / Meteor.JS</li>
-          <li className="list-group-item">MySQL / MongoDB</li>
-          <li className="list-group-item">JavaScript / Java / JSON</li>
-          <li className="list-group-item">Cloud Foundry</li>
-          <li className="list-group-item">Python</li>
-        </ul>
-      </div>
+        <div className="row">
+            <div className="col-sm-6 col-md-4">
+                <div className="card">
+                    <div className="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML logo" className="card-img-top"/>
+                        <h5 className="card-title">HTML / CSS / PHP</h5>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+                <div className="card">
+                    <div className="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React logo" className="card-img-top"/>
+                        <h5 className="card-title">React.JS / Meteor.JS</h5>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+                <div className="card">
+                    <div className="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="PostgreSQL logo" className="card-img-top"/>
+                        <h5 className="card-title">MySQL / MongoDB</h5>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+                <div className="card">
+                    <div className="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Javascript-shield.svg" alt="JavaScript logo" className="card-img-top"/>
+                        <h5 className="card-title">JavaScript / Java / JSON</h5>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+                <div className="card">
+                    <div className="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/ef/IBM_Cloud_logo.png" alt="IBM Cloud logo" className="card-img-top"/>
+                        <h5 className="card-title">Cloud Foundry</h5>
+                    </div>
+                </div>
+            </div>
+            <div className="col-sm-6 col-md-4">
+                <div className="card">
+                    <div className="card-body">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python logo" className="card-img-top"/>
+                        <h5 className="card-title">Python</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     </div>
   );
 };
