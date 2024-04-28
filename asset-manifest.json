@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.b56cab19.css",
-    "main.js": "/portfolio/static/js/main.68671be0.js",
+    "main.css": "/portfolio/static/css/main.e95862ac.css",
+    "main.js": "/portfolio/static/js/main.bb5a6df9.js",
     "static/media/bg.png": "/portfolio/static/media/bg.09af36efaf606c25712d.png",
     "static/media/CV_Marc_Lin.pdf": "/portfolio/static/media/CV_Marc_Lin.6ac51ba45ff211fd069e.pdf",
     "static/media/certification_openclassroom2.png": "/portfolio/static/media/certification_openclassroom2.47608d5efa3b53f8691a.png",
     "static/media/certification_openclassroom.png": "/portfolio/static/media/certification_openclassroom.7b44b63e1ece93b556dd.png",
     "static/media/logo.png": "/portfolio/static/media/logo.2d4f22600694f071295c.png",
     "index.html": "/portfolio/index.html",
-    "main.b56cab19.css.map": "/portfolio/static/css/main.b56cab19.css.map",
-    "main.68671be0.js.map": "/portfolio/static/js/main.68671be0.js.map"
+    "main.e95862ac.css.map": "/portfolio/static/css/main.e95862ac.css.map",
+    "main.bb5a6df9.js.map": "/portfolio/static/js/main.bb5a6df9.js.map"
   },
   "entrypoints": [
-    "static/css/main.b56cab19.css",
-    "static/js/main.68671be0.js"
+    "static/css/main.e95862ac.css",
+    "static/js/main.bb5a6df9.js"
   ]
 }
