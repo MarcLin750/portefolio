@@ -4,6 +4,14 @@
     padding: 40px;
 }
 
+.certif_openclassroom {
+    width: 90%;
+}
+
+.certif_openclassroom2 {
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
     .profile {
         margin-block: 5rem;

@@ -57,7 +57,7 @@ const Home: FunctionComponent<HomeProps> = ({ setActivePage }) => {
           <p>
             {secondPart}
             <div className="navbar-nav ms-auto">
-              <a className="nav-link col-lg-3 col-md-4" onClick={() => setActivePage('Profile')}><strong>→ En savoir plus.</strong></a>
+              <a className="nav-link col-lg-3 col-md-4" href="#" onClick={() => setActivePage('Profile')}><strong>→ En savoir plus.</strong></a>
               <a className="nav-link col-lg-3 col-md-4" href="https://www.linkedin.com/in/marc-lin-80425a25a/" target="_blank" rel="noopener noreferrer"><strong>→ LinkedIn.</strong></a>
             </div>
           </p>
