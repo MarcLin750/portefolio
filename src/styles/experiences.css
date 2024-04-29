@@ -1,23 +1,22 @@
-.profil {
+.experiences {
     margin-block: 5rem;
     margin-inline: 20vw;
     padding: 40px;
 }
 
-.certif_openclassroom {
-    width: 100%;
+.nav-link {
+    transition: color 0.3s, text-decoration-color 0.3s; 
+    cursor: pointer;
 }
 
-.certif_openclassroom2 {
-    width: 100%;
+.nav-link:hover {
+    color: #ff8c00;
+    text-decoration-color: #ff8c00;
 }
 
-.certif_pix {
-    width: 100%;
-}
 
 @media screen and (max-width: 600px) {
-    .profil {
+    .experiences {
         margin-block: 5rem;
         margin-inline: 4vw;
         padding: 10px;

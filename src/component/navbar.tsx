@@ -13,7 +13,7 @@ const NavBar: FunctionComponent<NavBarProps> = ({ setActivePage }) => {
     }
 
     return (
-        <nav className="navbarPortfolio navbar navbar-expand-xl fixed-top bg-body border border-2 shadow">
+        <nav className="navbar navbar-expand-xl bg-body fixed-top border border-2 shadow">
             <div className="container-fluid">
                 <a href="#top" onClick={() => setActivePage('Home')}>
                     <img src={logoPath} alt="logo" className="navbar-img" />

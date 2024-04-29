@@ -1,12 +1,15 @@
 import React, { FunctionComponent, useState } from "react";
 import Home from './pages/home';
+import NavBar from "./component/navbar";
+import Profile from "./pages/profil";
 import CV from "./pages/cv";
-import Profile from "./pages/profile";
+import Veilles from "./pages/veilles";
+import Projets from "./pages/projets";
+import Experiences from "./pages/experiences";
+import Contact from "./pages/contact";
 import Footer from './component/footer'
 
 import './styles/nav-bar.css';
-import Veilles from "./pages/veilles";
-import NavBar from "./component/navbar";
 
 const App: FunctionComponent = () => {
     
@@ -29,16 +32,16 @@ const App: FunctionComponent = () => {
                 <CV />
             )}
             {activePage === 'Projets' && (
-                <CV />
+                <Projets />
             )}
             {activePage === 'Experiences' && (
-                <CV />
+                <Experiences />
             )}
             {activePage === 'Veilles' && (
                 <Veilles />
             )}
             {activePage === 'Contact' && (
-                <CV />
+                <Contact />
             )}
             <Footer />
         </div>

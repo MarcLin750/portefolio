@@ -2,13 +2,14 @@ import React, { FunctionComponent } from "react";
 import "../styles/profile.css";
 import SVG from "../component/svg";
 
-const Profile: FunctionComponent = () => {
+const Profil: FunctionComponent = () => {
 
   const certif_openclassroom = require('../images/certification_openclassroom.png');
   const certif_openclassroom2 = require('../images/certification_openclassroom2.png');
+  const certif_pix = require('../images/certification_pix.png');
 
   return (
-    <div className="profile">
+    <div className="profil">
       {/* Présentation */}
       <div className="section">
         <h2>Présentation</h2>
@@ -64,20 +65,21 @@ const Profile: FunctionComponent = () => {
         </div>
         <SVG />
       </div>
-      <div className="section border-bottom">
-        <h2 className="mt-2">Certification Open Class Room</h2>
-        <button type="button" className="btn my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          <img className="certif_openclassroom" src={certif_openclassroom} alt="Certification" />
+      <hr />
+      <div className="section">
+        <h2 className="mt-2">Certifications Open Class Room</h2>
+        <button type="button" className="btn my-4" data-bs-toggle="modal" data-bs-target="#certif_openclassroom">
+          <img className="certif_openclassroom" src={certif_openclassroom} alt="Certificertif_openclassroomcation" />
         </button>
-        <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div className="modal fade" id="certif_openclassroom" tabIndex={-1} aria-labelledby="certif_openclassroom" aria-hidden="true">
           <div className="modal-dialog modal-xl modal-dialog-scrollable">
             <div className="modal-content">
               <div className="modal-header">
-                <h1 className="modal-title fs-5" id="exampleModalLabel">Mes Certifications</h1>
+                <h1 className="modal-title fs-5" id="certif_openclassroom">Mes Certifications Open Class Room</h1>
                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div className="modal-body">
-                <img className="certif_openclassroom2" src={certif_openclassroom2} alt="Certification" />
+                <img className="certif_openclassroom2" src={certif_openclassroom2} alt="certif_openclassroom2" />
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -86,27 +88,57 @@ const Profile: FunctionComponent = () => {
           </div>
         </div>
       </div>
+      <hr />
       <div className="section">
+        <h2 className="mt-2">Certifications Pix</h2>
+        <button type="button" className="btn my-4" data-bs-toggle="modal" data-bs-target="#certif_pix">
+          <img className="certif_pix" src={certif_pix} alt="certif_pix" />
+        </button>
+        <div className="modal fade" id="certif_pix" tabIndex={-1} aria-labelledby="certif_pix" aria-hidden="true">
+          <div className="modal-dialog modal-xl modal-dialog-scrollable">
+            <div className="modal-content">
+              <div className="modal-header">
+                <h1 className="modal-title fs-5" id="certif_pix">Mes Certifications Pix</h1>
+                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div className="modal-body">
+                <img className="certif_pix" src={certif_pix} alt="Certification" />
+              </div>
+              <div className="modal-footer">
+                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div className="section mt-4">
         <div className="card p-4">
           <h2>Lycée René Descartes</h2>
           <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
-            <div className="col mb-2">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.729492734128!2d2.582931412637917!3d48.84429827121067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e2c203280e7%3A0x68fd06317a618f69!2sLyc%C3%A9e%20Ren%C3%A9%20Descartes!5e0!3m2!1sfr!2sfr!4v1714330082747!5m2!1sfr!2sfr" title="Localisation du Lycée René Descartes" width="100%" height="400px" style={{ border: '0' }} loading="lazy" />
-            </div>
             <div className="col">
-              <h5>
-                Propose deux formations d'études supérieures (BTS SIO) :
+              <h4>
+                Deux formations d'études supérieures (BTS SIO) :
+              </h4>
                 <hr/>
                 <ul>
                   <li>
-                    SLAM: <br /> Formation axée sur le développement et la maintenance de solutions logicielles pour les entreprises.
+                    <strong>SLAM:</strong> 
+                    <br /> 
+                    Formation axée sur le développement et la maintenance de 
+                    solutions logicielles pour les entreprises.
                   </li>
                   <br />
                   <li>
-                    SISR: <br /> Formation spécialisée dans la gestion des infrastructures informatiques et des réseaux d'entreprise.
+                    <strong>SISR:</strong> 
+                    <br /> 
+                    Formation spécialisée dans la gestion des infrastructures 
+                    informatiques et des réseaux d'entreprise.
                   </li>
                 </ul>
-              </h5>
+            </div>
+            <div className="col mb-2">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.729492734128!2d2.582931412637917!3d48.84429827121067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e2c203280e7%3A0x68fd06317a618f69!2sLyc%C3%A9e%20Ren%C3%A9%20Descartes!5e0!3m2!1sfr!2sfr!4v1714330082747!5m2!1sfr!2sfr" title="Localisation du Lycée René Descartes" width="100%" height="400px" style={{ border: '0' }} loading="lazy" />
             </div>
           </div>
         </div>
@@ -115,4 +147,4 @@ const Profile: FunctionComponent = () => {
   );
 };
 
-export default Profile;
+export default Profil;
