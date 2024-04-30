@@ -29,11 +29,12 @@ const Profil: FunctionComponent = () => {
         </p>
         <h4>Objectifs professionnels</h4>
         <p>
-          Mon objectif professionnel à court terme est de trouver un emploi en
-          tant que développeur d’application / web junior dans une entreprise
-          dynamique et innovante. À long terme, j'aspire à devenir chef de
-          projet informatique et à diriger des équipes de développement sur des
-          projets complexes et ambitieux.
+          Mon objectif principal est de me concentrer sur la poursuite de mes études en vue de 
+          l'obtention d'un diplôme d'ingénieur en informatique. Je suis déterminé à consacrer 
+          mes efforts à l'apprentissage des connaissances et des compétences indispensables 
+          pour réussir dans ce domaine en constante évolution. Je suis particulièrement 
+          intéressé par l'étude en apprentissage, conscient de son rôle crucial dans 
+          l'évolution dynamique de l'informatique.
         </p>
         <h4>Passion pour l'informatique</h4>
         <p>

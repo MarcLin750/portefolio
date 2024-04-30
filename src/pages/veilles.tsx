@@ -51,7 +51,6 @@ const Veilles = () => {
                 setLoading(false);
             }
         };
-
         fetchRSSFeed();
     }, []);
 
@@ -68,14 +67,26 @@ const Veilles = () => {
                 </div>
             ) : (
                 <div>
-                    <div className='section border-bottom mb-4'>  
-                      <h2>Veille Technologique:</h2>
+                    <div className='section border-bottom mb-4'>
+                        <h2>Définition d'une Veille Technologique:</h2>
                         <p>
-                            La veille informatique, c'est le fait de garder un œil sur les nouvelles tendances, les innovations et 
-                            les développements dans le domaine de l'informatique. Cela implique de collecter, 
-                            d'analyser et d'interpréter les informations pertinentes pour rester à jour et 
-                            anticiper les évolutions futures. En bref, c'est être un explorateur numérique, 
-                            toujours en quête de nouvelles connaissances pour rester à la pointe de la technologie.
+                            La veille technologique ou veille scientifique et technique, c'est le fait de garder 
+                            un œil sur les nouvelles tendances, les innovations et les développements dans le 
+                            domaine de l'informatique. Cela implique de collecter, d'analyser et d'interpréter 
+                            les informations pertinentes pour rester à jour et anticiper les évolutions futures. 
+                            En bref, c'est être un explorateur numérique, toujours en quête de nouvelles connaissances 
+                            pour rester à la pointe de la technologie.
+                        </p>
+                        <h2>Ma Veille Technologique: <strong>Mozdila MDZ</strong></h2>
+                        <p>
+                            En tant que développeur, mon choix de suivre la veille sur le blog de Mozdila MDZ s'explique 
+                            par la pertinence et la fréquence des publications de ce blog, notamment en ce qui concerne les 
+                            langages informatiques. Il est important de rester informé des dernières avancées dans le 
+                            domaine de la programmation et des langages informatiques, en raison de l'évolution 
+                            constante de la technologie.
+                        </p>
+                        <p>
+                           
                         </p>
                     </div>
                     <div className="row">

@@ -1,0 +1,13 @@
+.contact {
+    margin-block: 5rem;
+    margin-inline: 20vw;
+    padding: 80px;
+}
+
+@media screen and (max-width: 600px) {
+    .contact {
+        margin-block: 5rem;
+        margin-inline: 4vw;
+        padding: 10px;
+    }
+}
