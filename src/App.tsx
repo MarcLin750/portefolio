@@ -40,9 +40,9 @@ const App: FunctionComponent = () => {
             {activePage === 'Veilles' && (
                 <Veilles />
             )}
-            {activePage === 'Contact' && (
+            {/* {activePage === 'Contact' && (
                 <Contact />
-            )}
+            )} */}
             <Footer />
         </div>
     )
