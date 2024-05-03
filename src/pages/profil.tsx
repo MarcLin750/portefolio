@@ -6,7 +6,6 @@ const Profil: FunctionComponent = () => {
 
   const certif_openclassroom = require('../images/certification_openclassroom.png');
   const certif_openclassroom2 = require('../images/certification_openclassroom2.png');
-  const certif_pix = require('../images/certification_pix.png');
 
   return (
     <div className="profil">
@@ -81,29 +80,6 @@ const Profil: FunctionComponent = () => {
               </div>
               <div className="modal-body">
                 <img className="certif_openclassroom2" src={certif_openclassroom2} alt="certif_openclassroom2" />
-              </div>
-              <div className="modal-footer">
-                <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="section">
-        <h2 className="mt-2">Certifications Pix</h2>
-        <button type="button" className="btn my-4" data-bs-toggle="modal" data-bs-target="#certif_pix">
-          <img className="certif_pix" src={certif_pix} alt="certif_pix" />
-        </button>
-        <div className="modal fade" id="certif_pix" tabIndex={-1} aria-labelledby="certif_pix" aria-hidden="true">
-          <div className="modal-dialog modal-xl modal-dialog-scrollable">
-            <div className="modal-content">
-              <div className="modal-header">
-                <h1 className="modal-title fs-5" id="certif_pix">Mes Certifications Pix</h1>
-                <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div className="modal-body">
-                <img className="certif_pix" src={certif_pix} alt="Certification" />
               </div>
               <div className="modal-footer">
                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close</button>
