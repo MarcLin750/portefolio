@@ -40,9 +40,9 @@ const NavBar: FunctionComponent<NavBarProps> = ({ setActivePage }) => {
                         <li className="nav-item d-flex align-items-center">
                             <a className="nav-link" href="#top" onClick={() => setActivePage('Veilles')}><strong>Veilles</strong></a>
                         </li>
-                        <li className="nav-item d-flex align-items-center">
+                        {/* <li className="nav-item d-flex align-items-center">
                             <a className="nav-link" href="#top" onClick={() => setActivePage('Contact')}><strong>Contact</strong></a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                             <div className="d-flex align-items-center">
                                 <div className="form-color-mode flex-grow-1">

@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from "react";
 import "../styles/profile.css";
 import SVG from "../component/svg";
+import Linkedin from "../svg/linkedin";
+import GitHub from "../svg/github";
 
 const Profil: FunctionComponent = () => {
 
@@ -42,11 +44,8 @@ const Profil: FunctionComponent = () => {
           service d'une entreprise et de contribuer à la réussite de ses projets
           informatiques.
         </p>
-        <h5>Liens :</h5>
-        <div className="navbar-nav ms-auto mb-5">
-          <a className="nav-link col-lg-3 col-md-4" href="https://www.linkedin.com/in/marc-lin-80425a25a/" target="_blank" rel="noopener noreferrer"><strong>→ LinkedIn.</strong></a>
-          <a className="nav-link col-lg-3 col-md-4" href="https://github.com/MarcLin750?tab=repositories/" target="_blank" rel="noopener noreferrer"><strong>→ GitHub.</strong></a>
-        </div>
+        <a className="me-2" href="https://www.linkedin.com/in/marc-lin-80425a25a/" target="_blank" rel="noopener noreferrer"><strong><Linkedin/></strong></a>
+        <a href="https://github.com/MarcLin750?tab=repositories/" target="_blank" rel="noopener noreferrer"><strong><GitHub/></strong></a>
       </div>
       <hr />
       <div className="section">
