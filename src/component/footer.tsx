@@ -12,7 +12,6 @@ const Footer: FunctionComponent = () => {
                         &copy;Marc Lin
                     </h5>
                     <div className="col-2">
-                        <h5>Liens :</h5>
                         <a className="me-2" href="https://www.linkedin.com/in/marc-lin-80425a25a/" target="_blank" rel="noopener noreferrer"><strong><Linkedin /></strong></a>
                         <a href="https://github.com/MarcLin750?tab=repositories/" target="_blank" rel="noopener noreferrer"><strong><GitHub /></strong></a>
                     </div>
