@@ -15,10 +15,8 @@ const Profil: FunctionComponent = () => {
       <div className="section">
         <h2>Présentation</h2>
         <p>
-          Etudiant au sein du <a href="https://www.rene-descartes.fr/" target="_blank" rel="noreferrer">Lycée René Descartes</a>, 
-          j'ai suivi un Brevet de Technicien Supérieur (<strong>BTS</strong>)
-          en Services Informatiques aux Organisations (<strong>SIO</strong>), option Solutions
-          Logicielles et Applications Métiers (<strong>SLAM</strong>), depuis 2 ans.
+          Etudiant au sein de <a href="https://www.lyceecharlesdefoucauldsup.fr" target="_blank" rel="noreferrer">l'UFA Charles de Foucauld - Groupe Scolaire La Madone</a>, 
+          je suis actuellement à la recherche d'une alternance pour cette <strong>License générale informatique de 3 ème année</strong>.
         </p>
         <h4>Parcours</h4>
         <p>
@@ -27,6 +25,11 @@ const Profil: FunctionComponent = () => {
         j'ai eu l'opportunité de suivre des cours d'algorithmie en Python au sein de ce lycée. Ces cours ont particulièrement 
         captivé mon intérêt et ont été déterminants dans le choix de ma poursuite d'études. C'est ainsi que j'ai décidé de 
         m'orienter vers un BTS spécialisé en développement informatique.
+        <br/>
+        J'ai suivi un Brevet de Technicien Supérieur (<strong>BTS</strong>)
+        en Services Informatiques aux Organisations (<strong>SIO</strong>), option Solutions
+        Logicielles et Applications Métiers (<strong>SLAM</strong>), durant 2 ans au <a href="https://www.rene-descartes.fr/" target="_blank" rel="noreferrer">Lycée René Descartes</a>. 
+        L’ayant décroché avec une moyenne de <strong>14,36</strong>.
         </p>
         <h4>Objectifs professionnels</h4>
         <p>
@@ -94,27 +97,27 @@ const Profil: FunctionComponent = () => {
           <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
             <div className="col">
               <h4>
-                Deux formations d'études supérieures (BTS SIO) :
+                UFA Charles de Foucauld - Groupe Scolaire La Madone :
               </h4>
                 <hr/>
                 <ul>
                   <li>
-                    <strong>SLAM:</strong> 
+                    <strong>License Générale Informatique</strong> 
                     <br /> 
-                    Formation axée sur le développement et la maintenance de 
-                    solutions logicielles pour les entreprises.
+                    Développement d'applications Web, Mobiles et Cybersécurité en alternance 
+                    forme de jeunes développeurs d’applications dans le cadre d’une alternance 
+                    Ecole - Entreprise en contrat d’apprentissage.
                   </li>
                   <br />
                   <li>
-                    <strong>SISR:</strong> 
+                    <strong>Conservatoire national des arts et métiers</strong> 
                     <br /> 
-                    Formation spécialisée dans la gestion des infrastructures 
-                    informatiques et des réseaux d'entreprise.
+                    Elle est organisée en partenariat avec le CNAM qui délivre le diplôme de la licence générale informatique.
                   </li>
                 </ul>
             </div>
             <div className="col mb-2">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.729492734128!2d2.582931412637917!3d48.84429827121067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e60e2c203280e7%3A0x68fd06317a618f69!2sLyc%C3%A9e%20Ren%C3%A9%20Descartes!5e0!3m2!1sfr!2sfr!4v1714330082747!5m2!1sfr!2sfr" title="Localisation du Lycée René Descartes" width="100%" height="400px" style={{ border: '0' }} loading="lazy" />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5246.380028792129!2d2.3585961124555594!3d48.89271579817019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e7cf6c9e843%3A0x18034a7698e92894!2sLyc%C3%A9e%20Charles%20de%20Foucauld%20-%20Groupe%20Scolaire%20La%20Madone!5e0!3m2!1sfr!2sfr!4v1727562533180!5m2!1sfr!2sfr" title="Localisation du Lycée René Descartes" width="100%" height="400px" style={{ border: '0' }} loading="lazy" />
             </div>
           </div>
         </div>
