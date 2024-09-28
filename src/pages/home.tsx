@@ -10,7 +10,7 @@ const Home: FunctionComponent<HomeProps> = ({ setActivePage }) => {
   const [cursor, setCursor] = useState(true);  // État pour gérer le clignotement du curseur
   const [showAdditionalContent, setShowAdditionalContent] = useState(false);  // Nouvel état pour contrôler l'affichage des contenus supplémentaires
 
-  const firstPart = "Je m'appelle Marc Lin, étudiant en Brevet De Technicien Supérieur, Service Informatique aux Organisations, option Solutions Logicielles et Applications Métiers (BAC+2)";
+  const firstPart = "Je m'appelle Marc Lin, étudiant en Licence 3 générale Informatique (BAC+3)";
   const secondPart = "Passionné par les logiciels et fasciné par l’expansion de l’industrie des technologies ces dernières années.";
 
   useEffect(() => {
