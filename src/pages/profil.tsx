@@ -93,11 +93,11 @@ const Profil: FunctionComponent = () => {
       <hr />
       <div className="section mt-4">
         <div className="card p-4">
-          <h2>Lycée René Descartes</h2>
+          <h2>UFA Charles de Foucauld</h2>
           <div className="row row-cols-1 row-cols-sm-1 row-cols-md-2">
             <div className="col">
               <h4>
-                UFA Charles de Foucauld - Groupe Scolaire La Madone :
+                Groupe Scolaire La Madone :
               </h4>
                 <hr/>
                 <ul>
@@ -110,7 +110,7 @@ const Profil: FunctionComponent = () => {
                   </li>
                   <br />
                   <li>
-                    <strong>Conservatoire national des arts et métiers</strong> 
+                    Conservatoire national des arts et métiers
                     <br /> 
                     Elle est organisée en partenariat avec le CNAM qui délivre le diplôme de la licence générale informatique.
                   </li>
